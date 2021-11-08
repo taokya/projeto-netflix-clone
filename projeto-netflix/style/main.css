@@ -1,0 +1,89 @@
+:root{
+    --vermelho: #e50914;
+    --preto:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: red ;
+}
+
+.filme-principal{
+    font-size: 1em;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/totoro.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*sempre se invertem dependendo da direção do flex direction9*/    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
